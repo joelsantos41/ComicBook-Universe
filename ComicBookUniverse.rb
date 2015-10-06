@@ -1,17 +1,23 @@
 require "sinatra"
 
-set :bind, "0.0.0.0"
 
-get "/ComicBook Universe" do
-	"ComicBook Universe, #{params[:ComicBook]} #{params[:Universe]}" + rand(10).to_s
+get "/ComicBookUniverse" do
+	erb :ComicBookUniverse
 end
 
-get "/Marvel Section" do
-	"Marvel Universe comics found here, #{params[:slithy]}" 
+get "/comicindex" do
+	erb :comicindex
 end
 
-get "/DC Universe Section" do
-	"DC Universe comics found here, #{params[:slithy]}" 
+get "/StanLee" do
+	erb :StanLee
+end
+
+get "/manga" do
+	end
+get "/anime" do
+end
+get "/collectibles" do
 end
 
 	
