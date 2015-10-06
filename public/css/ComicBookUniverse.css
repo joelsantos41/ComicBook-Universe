@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Mandingo;
+    src: url("/css/mandingo/MANDINGO.TTF");
+}
 body {
 	max-width: 2000px;
 	max-height: 1800px;
@@ -5,6 +9,7 @@ body {
 	text-align: center;
 	margin-left: auto;
 	margin-right:auto;
+	font-family: Mandingo;
 }
 nav {
 	background-color: white;
@@ -12,22 +17,22 @@ nav {
 	border-radius: 25px;
 	padding:5px;
 	margin:5px;
+	position:fixed;
+	overflow:hidden;
 }
 li {
 	list-style-type: none;
 	border:2px solid black;
-	width:50%;
 	margin-top:5px;
 	margin-bottom: 5px;
 	border-radius: 10px;
 	text-align: center;
-	display:inline-block;
+	padding:5px;
 }
 img {
 	float:left;
 	width:400px;
 	height:650px;
-	border:2px solid 2 white;
 	padding:10px;
 
 }
@@ -52,6 +57,9 @@ section{
 	margin-left: auto;
 	margin-right:auto;
 }
+h1{
+	font-size: 35px;
+}
 h1,h2,h3 {
 	clear:both;
 }
@@ -60,4 +68,8 @@ h2,h3 {
 	border-radius: 20px;
 	padding:10px;
 	background-color: white;
+}
+#hsButton{
+	border:2px solid black;
+	border-radius: 10px;
 }
