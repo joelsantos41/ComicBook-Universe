@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>	
+  <title>ComicBook Universe</title>
+  <link rel="stylesheet" type="text/css" href="/css/ComicBookUniverse.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>Comics</li>
+        <li>Manga</li>
+        <li>Anime</li>
+        <li>Collectibles</li>
+        <li>Stan Lee</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <article>
+    <h1>The Comics You Desire Most</h1>
+    <h2 class ="hideable">Comics</h2>
+    <section>
+      <h3 class="hideable">Marvel</h3>
+      <div class="imgs">
+        <img src="http://images-cdn.moviepilot.com/images/c_fill,h_961,w_625/t_mp_quality/peopib1mxhssjzbtcrut/infinity-wars-or-civil-war-when-will-captain-america-put-down-the-shield-for-good-397312.jpg">
+        <img src="http://cinestar.hu/wp-content/uploads/2015/07/Wolverine_Vol_3_68.jpg">
+        <img src="http://globaltoynews.typepad.com/.a/6a0133ec87bd6d970b01bb083d5dc1970d-500wi">
+        <img src="http://www.rarecomicbooks.fashionablewebs.com/Xmen/TheUncannyXmen129.jpg">
+        <img src="http://robot6.comicbookresources.com/wp-content/uploads/2012/11/ff-1-cover.jpg">
+        <img src="http://x.annihil.us/u/prod/marvel/i/mg/f/a0/53b2f50325035.jpg">
+      </div>
+    </section>
+    <section>  
+      <h3 class= "hideable">DC</h3>
+      <div class="imgs">
+        <img src="http://talismancoins.com/content/catalog/Superman_Annual_Vol_3_1.jpg">
+        <img src="https://dabidsblog.files.wordpress.com/2011/09/deathstroke-1-cover.jpeg">
+        <img src="http://www.comicbooked.com/wp-content/uploads/2012/07/Detective_Comics_Vol_2-11_Cover-1.jpg">
+        <img src="http://comicmegastore.com/images/dc-misc/DC%20Comics-Flash-Ann-4.jpg">
+        <img src="http://comicmegastore.com/images/dc-misc/dc-special-series-comic-9.jpg">
+        <img src="http://vignette3.wikia.nocookie.net/marvel_dc/images/f/f1/Hawkgirl_Vol_1_59.jpg/revision/latest?cb=20070102220007">
+      </div>
+    </section>
+    <section>
+      <h2 class="hideable">Manga</h2>
+      <div class="imgs">
+        <img src="http://www.cyberbotx.com/Naram/Youmacon2005/FullmetalAlchemist1SignedByCaitlinGlass.jpg">
+        <img src="http://vignette4.wikia.nocookie.net/dragonball/images/0/0d/DBallv1.jpg/revision/latest/scale-to-width-down/300?cb=20100715065659">
+        <img src="http://static.comicvine.com/uploads/scale_small/7/71975/2101119-44279_samurai_champloo_film_manga_volume_1_super.jpg">
+      </div>
+    </section>
+    <section>
+      <h2 class="hideable">Anime</h2>
+
+      <div class="imgs">
+        <img src="http://thefindmag.com/wp-content/uploads/Samurai-Champloo.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/37/CowboyBebopDVDBoxSet.jpg">
+        <img src="http://i.yai.bz/Assets/39/353/l_p1022335339.jpg">
+      </div>
+    </section>
+  </article>
+  <script type="text/javascript">
+    $(".hideable").on("click", fold())
+    function fold(){
+      $("imgs").hide()
+    }
+  </script>
+</body>
+</html>
