@@ -3,6 +3,7 @@
 <head>	
   <title>ComicBook Universe</title>
   <link rel="stylesheet" type="text/css" href="/css/ComicBookUniverse.css">
+  <!-- Favicon fun -->
   <link rel="icon" 
       type="image/jpg" 
       href="/images/boom-comic-book-explosion.jpg">
@@ -14,12 +15,13 @@
     <nav>
       <p id="hsButton">Hide/Show</p>
       <ul>
+        <li><a href="ComicBookUniverse">ComicBook Universe</a></li>
         <li>Comics</li>
         <li>Manga</li>
         <li>Anime</li>
         <li>Collectibles</li>
-        <li>Stan Lee</li>
-        <li>Contact</li>
+        <li><a href="StanLee">Stan Lee</a></li>
+        <li><a href="contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -43,6 +45,7 @@
         </div>
       </div>
     </section>
+
     <section class="hideable">  
       <div class="comics">
         <h3>DC</h3>
@@ -56,6 +59,7 @@
         </div>
       </div>
     </section>
+
     <section class="hideable">
       <h2>Manga</h2>
       <div class="imgs">
@@ -64,6 +68,7 @@
         <img src="http://static.comicvine.com/uploads/scale_small/7/71975/2101119-44279_samurai_champloo_film_manga_volume_1_super.jpg">
       </div>
     </section>
+
     <section class="hideable">
       <h2>Anime</h2>
       <div class="imgs">
@@ -97,6 +102,7 @@
       // debugger;
       $(event.currentTarget).find(" > div > .imgs").toggle();
     });
+
     $(".hideable").click(function (event){
       // console.log("clicked", event, $(event.currentTarget).find("> .imgs").length);
       // debugger;
@@ -106,7 +112,6 @@
     $("#hsButton").click(function (event){
       $(event.currentTarget).find(" + ul").toggle();
     });
-    
   </script>
 </body>
 </html>
