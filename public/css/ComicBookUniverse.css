@@ -10,8 +10,10 @@ body {
 	margin-left: auto;
 	margin-right:auto;
 	font-family: Mandingo;
+	overflow: scroll;
 }
-nav {
+
+header nav {
 	width:15%;
 	background-color: white;
 	border:2px solid black;
@@ -21,8 +23,21 @@ nav {
 	position:fixed;
 	overflow:hidden;
 	float:left;
-
 }
+/*#localNav {
+	width:100%;
+	border:2px solid black;
+	border-radius: 10px;
+	display: inline-block;
+	position:fixed;
+	background-color: white;
+	/*	margin-left:85%;
+}
+.clear {
+/*	attempted to fix nav bars 
+	clear:both;
+	padding:10px;
+}*/
 li {
 	list-style-type: none;
 	border:2px solid black;
@@ -56,6 +71,11 @@ section{
 	margin-left: auto;
 	margin-right:auto;
 }
+p > img{
+	width:100%;
+	height:60%;
+	padding:20px;
+}
 h1{
 	font-size: 35px;
 }
@@ -68,10 +88,11 @@ h2,h3 {
 	padding:10px;
 	background-color: white;
 }
-#hsButton{
+.hsButton{
 	border:2px solid black;
 	border-radius: 10px;
 }
+
 form {
 	/*text-align: left;*/
 	margin-left: auto;
@@ -84,4 +105,31 @@ form {
 #stan{
 	background-color: red;
 }
-
+form {
+	background-color: #cccccc;
+	background-image: url("http://blog.landsend.com/wp-content/uploads/2013/12/superman.jpg");
+	text-align: right;
+	overflow: hidden;
+}
+form div {
+	background-color: orange;
+	border:5px solid black;
+	width:40%;
+	float:right;
+}
+/*#contact > h2 {
+	width:50%;
+	height:auto;
+	padding:10px;
+	margin:50px;
+}*/
+#logo{
+	width:10%;
+	height:auto;
+	margin-left:3%;
+	margin-right:auto;
+}
+#banner {
+	width:100%;
+	height:auto;
+}
