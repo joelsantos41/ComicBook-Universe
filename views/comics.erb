@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>	
-  <title>ComicBook Universe</title>
+  <title>ComicBook Universe - Comics</title>
   <link rel="stylesheet" type="text/css" href="/css/ComicBookUniverse.css">
   <!-- Favicon fun -->
   <link rel="icon" 
@@ -25,21 +25,10 @@
       </ul>
     </nav>
   </header>
-
-  <article>
-
-    <h1> # ComicBook Universe #</h1>
-    <img id="logo" src="/images/boom-comic-book-explosion.jpg">
-    <p>
-      The Comics You Desire Most <br>
-      <img id ="banner" src="/images/hakes_batmancellophanecard.jpg">
-      <br> # Click a header to hide/show content #
-    <p>
+  <h1> # ComicBook Universe #</h1>
+<section class="hideable">
     
-    <section class="hideable">
-
     <h2 id="comicHead">Comics</h2>
-    
       <div class="comics">
         <h3>Marvel</h3>
         <div class="imgs">
@@ -67,40 +56,11 @@
       </div>
     </section>
 
-    <section class="hideable">
-      <h2>Manga</h2>
-      <div class="imgs">
-        <img src="http://www.cyberbotx.com/Naram/Youmacon2005/FullmetalAlchemist1SignedByCaitlinGlass.jpg">
-        <img src="http://vignette4.wikia.nocookie.net/dragonball/images/0/0d/DBallv1.jpg/revision/latest/scale-to-width-down/300?cb=20100715065659">
-        <img src="http://static.comicvine.com/uploads/scale_small/7/71975/2101119-44279_samurai_champloo_film_manga_volume_1_super.jpg">
-      </div>
-    </section>
-
-    <section class="hideable">
-      <h2>Anime</h2>
-      <div class="imgs">
-        <img src="http://thefindmag.com/wp-content/uploads/Samurai-Champloo.jpg">
-        <img src="https://upload.wikimedia.org/wikipedia/en/3/37/CowboyBebopDVDBoxSet.jpg">
-        <img src="http://i.yai.bz/Assets/39/353/l_p1022335339.jpg">
-      </div>
-    </section>
-
-    <section class="hideable">
-      <h2>Collectibles</h2>
-      <div class ="imgs">
-        <img src="http://holdyourfireal.smugmug.com/SideshowCollectibles/DC-Statues/i-DVfPZNz/0/XL/Sideshow-Collectibles-Batman-XL.jpg">
-        <img src="http://media.popcultcha.com.au/media/catalog/product/s/u/superman01_1.jpg">
-        <img src="https://www.sideshowtoy.com/assets/products/200265-spider-man/lg/200265-spider-man-004.jpg">
-        <img src="https://s-media-cache-ak0.pinimg.com/736x/d4/7a/f0/d47af00fae9688edd56db0dc5155896d.jpg">
-        <img src="http://files.warboss2.webnode.cz/200004000-95bf396b85/xSS400186_a.jpg">
-        <img src="http://www.razorsedgecollectibles.net/images/400189_press01-001.jpg">
-      </div>
-    </section>
-  </article>
-
-
   <script type="text/javascript">
-  //just for #comichead, header.
+   //Hide/show nav links
+    $("#hsButton").click(function (event){
+      $(event.currentTarget).find(" + ul").toggle();
+    });
     $("#comicHead").click(function (event){
         $(".comics").toggle();
     });
@@ -116,21 +76,12 @@
       // debugger;
       $(event.currentTarget).find("> .imgs").toggle();
     });
-
-    //Hide/show nav links
-    $("#hsButton").click(function (event){
-      $(event.currentTarget).find(" + ul").toggle();
-    });
-    // mouseover and out: color change for headers
-
-    $("#comicHead, h2, h3, li, #hsButton").on("mouseover", function(event){
+      $("#comicHead, h2, h3, li, #hsButton").on("mouseover", function(event){
         $(event.target).css("background-color", "purple");
     });
     $("#comicHead, h2, h3, li, #hsButton").on("mouseout", function(event){
         $(event.target).css("background-color", "white");
     });
-
-    // $("#logo").animate({'marginLeft' : "+=50px"});
   </script>
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>	
+  <title>ComicBook Universe - Anime</title>
+  <link rel="stylesheet" type="text/css" href="/css/ComicBookUniverse.css">
+  <!-- Favicon fun -->
+  <link rel="icon" 
+      type="image/jpg" 
+      href="/images/boom-comic-book-explosion.jpg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <p id="hsButton">Hide/Show</p>
+      <ul>
+        <li><a href="ComicBookUniverse">ComicBook Universe</a></li>
+        <li><a href="comics">Comics</a></li>
+        <li><a href="manga">Manga</a></li>
+        <li><a href="anime">Anime</a></li>
+        <li><a href="collectibles">Collectibles</a></li>
+        <li><a href="StanLee">Stan Lee</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article>
+    <h1># ComicBook Universe #</h1>
+    <section class="hideable">
+      <h2>Anime</h2>
+      <div class="imgs">
+        <img src="http://thefindmag.com/wp-content/uploads/Samurai-Champloo.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/37/CowboyBebopDVDBoxSet.jpg"> 
+        <img src="http://i.yai.bz/Assets/39/353/l_p1022335339.jpg">
+        <img src="http://img07.deviantart.net/d38a/i/2014/110/6/1/endless_waltz_gundam_h_arms_custom_by_greymaulkin-d7fcg31.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/Gundam_00_DVD_Volume_1.jpg"> 
+        <img src="http://vignette1.wikia.nocookie.net/superrobotwars/images/1/12/64943-tengentoppagurrenlagann.jpg/revision/latest?cb=20140405035417">
+      </div>
+    </section>
+  </article>
+  <script type="text/javascript">
+    //Hide/show nav links
+    $("#hsButton").click(function (event){
+      $(event.currentTarget).find(" + ul").toggle();
+    });
+  </script>
+</body>
+</html>
